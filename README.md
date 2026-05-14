@@ -1,23 +1,46 @@
-Temu içinde bulunan, yerel satıcılar tarafından satılan ürünlerin gözükmesini engelleyen web browser uzantısı.
+# Globalize Temu 🌍
 
-<img width="279" height="315" alt="image" src="https://github.com/user-attachments/assets/c29b1dec-9a19-4cc2-ad17-f686ea4fd62f" />
+A modern and efficient Google Chrome extension that automatically hides "Local" labeled products on Temu, allowing you to focus on global and international items without clutter.
 
-*Microsoft Edge ve Helium Browser üzerinde çalıştığı denenip onaylanmıştır.
+## ✨ Features
 
-Ekstra Özellikler
-- İngilizce ve Türkçe dil seçeneği.
-- Karanlık mod desteği.
-- Engellenen yerel satıcı ürün sayısı.
+*   **Real-time Filtering**: Automatically detects and hides local products as you browse and scroll through Temu, thanks to an efficient `MutationObserver`.
+*   **Modern Popup Interface**: A clean, user-friendly popup with smooth animations.
+*   **Theme Support**: Built-in Dark and Light modes to match your preference.
+*   **Multi-language Support**: Interface available in both English (EN) and Turkish (TR).
+*   **Statistics Tracking**: Keeps a running count of the total number of local products hidden by the extension.
+*   **Quick Toggle**: Easily enable or disable the extension with a simple switch. Auto-reloads your active Temu tab to apply changes instantly.
+*   **Privacy First**: Runs entirely locally in your browser. No data collection or external tracking.
 
-Sürümler ve özellikleri
+## 🚀 Installation (Developer Mode)
 
--1.3-
-İlk public, yalın sürüm.
+Since this extension is not currently published on the Chrome Web Store, you can install it manually by following these steps:
 
--1.4-
-Engellenen yerel satıcı ürün sayısı özelliği eklendi.
+1. Download or clone this repository to your local machine.
+2. Open Google Chrome and navigate to `chrome://extensions/`.
+3. Enable **"Developer mode"** by toggling the switch in the top right corner.
+4. Click on the **"Load unpacked"** button in the top left corner.
+5. Select the `temu_blocker` folder containing the extension files.
+6. The "Globalize Temu" extension is now installed and ready to use!
 
+## 🛠️ How it Works
 
+The extension uses Chrome's Manifest V3 architecture.
+*   **`content.js`**: Injects into `temu.com` pages. It scans the DOM for specific classes (like `.C9HMW0KN`, `._1O9WmJi_`) and image sources (`local-image`) associated with local products. When found, it hides their parent container (`display: none`).
+*   **`popup.js` & `popup.html`**: Handles the user interface, language switching, theme preferences, and displays the blocked item counter using `chrome.storage.local`.
 
+## ⚙️ Requirements
+*   Google Chrome browser (or any Chromium-based browser supporting Manifest V3).
 
+## ⚠️ Disclaimer
 
+This is an unofficial extension and is **not** affiliated with, endorsed by, or associated with Temu or PDD Holdings in any way. 
+
+The extension modifies the local view of the website for the user's convenience. The developer bears no responsibility for any account issues, blocked access, or changes in Temu's website structure that may render this extension non-functional. Use at your own risk.
+
+## 📝 License
+
+This project is provided "as-is" without any warranties. Feel free to modify and use it for your personal needs.
+
+---
+*Created by [Zephyrquill](https://github.com/Zephyrquill)*
