@@ -32,15 +32,5 @@ The extension uses Chrome's Manifest V3 architecture.
 ## ⚙️ Requirements
 *   Google Chrome browser (or any Chromium-based browser supporting Manifest V3).
 
-## ⚠️ Disclaimer
-
-This is an unofficial extension and is **not** affiliated with, endorsed by, or associated with Temu or PDD Holdings in any way. 
-
-The extension modifies the local view of the website for the user's convenience. The developer bears no responsibility for any account issues, blocked access, or changes in Temu's website structure that may render this extension non-functional. Use at your own risk.
-
-## 📝 License
-
-This project is provided "as-is" without any warranties. Feel free to modify and use it for your personal needs.
-
 ---
 *Created by [Zephyrquill](https://github.com/Zephyrquill)*
