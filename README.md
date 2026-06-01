@@ -33,4 +33,4 @@ The extension uses Chrome's Manifest V3 architecture.
 *   Google Chrome browser (or any Chromium-based browser supporting Manifest V3).
 
 ---
-*Created by [Zephyrquill](https://github.com/Zephyrquill)*
+*Created by [Bohjka](https://github.com/Bohjka)*
